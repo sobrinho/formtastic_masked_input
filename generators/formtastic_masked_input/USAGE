@@ -1,0 +1,9 @@
+Description:
+    The formtastic_masked_input generator creates a javascript file called
+    masked_input.js to the public path which will be used on formtastic.
+
+Example:
+    ./script/generate formtastic_masked_input
+
+    This will create:
+        public/javascripts/masked_input.js
