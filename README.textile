@@ -66,7 +66,7 @@ If you want to add a custom mask, you can edit masked_input.js around line 301 (
 
 h2. Credits
 
-Special thanks to Justin French for formtastic and Bjarte K. Vebjørnsen for MaskedInput port for Prototype.
+Special thanks to "Justin French":http://github.com/justinfrench for "formtastic":http://github.com/justinfrench/formtastic and "Bjarte K. Vebjørnsen":http://github.com/bjartekv for "MaskedInput port for Prototype":http://github.com/bjartekv/MaskedInput.
 
 h2. TODO
 
