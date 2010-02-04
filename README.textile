@@ -1,0 +1,56 @@
+h1. formtastic_masked_input
+
+Sometimes you want to mask your fields like phones, zipcodes or something like that.
+
+This plugin will do it for you if you are using formtastic.
+
+Note: the javascript file depends on Prototype 1.6.1, just update your prototype.js. Rails 2 uses Prototype version 1.6.0.3
+
+h2. Usage
+
+<pre>$ ruby script/plugin install git://github.com/sobrinho/formtastic_masked_input.git
+$ ruby script/generate formtastic_masked_input</pre>
+
+Include prototype.js and masked_input.js into layout:
+
+<pre><%= javascript_include_tag 'prototype', 'masked_input' %></pre>
+
+And update your form field:
+
+<pre><% semantic_form_for @person do |f| %>
+  <% f.inputs do %>
+    <%= f.input :name %>
+    <%= f.input :phone, :as => :masked, :mask => :phone %>
+  <% end %>
+
+  <%= f.buttons %>
+<% end %></pre>
+
+h3. Masks
+
+The available masks are made for Brazil:
+
+* phone: (99) 9999-9999
+* cpf: 999.999.999-99
+* cnpj: 99.999.999/9999-99
+* date: 99/99/9999
+* cep: 99999-999
+* time: 99:99
+
+If you want to add a custom mask, you can edit masked_input.js around line 301 (preferred) or add directly into your layout:
+
+<pre><%= javascript_include_tag 'prototype', 'masked_input' %>
+<script type="text/javascript">
+//<![CDATA[
+    Object.extend(MaskedInput.masks, {
+        'version': '9.9.9'
+    });
+//]]>
+</script></pre>
+
+h2. TODO
+
+* Make tests for Ruby
+* Make tests for JS
+
+Copyright (c) 2010 Gabriel Sobrinho, released under the MIT license
