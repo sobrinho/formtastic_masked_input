@@ -15,7 +15,7 @@ $ ruby script/generate formtastic_masked_input</pre>
 
 h3. Gem
 
-<pre>$ gem install formtastic_masked_input<pre>
+<pre>$ gem install formtastic_masked_input</pre>
 
 Add gem dependency to your environment.rb:
 
