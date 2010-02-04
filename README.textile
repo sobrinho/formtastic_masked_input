@@ -4,12 +4,28 @@ Sometimes you want to mask your fields like phones, zipcodes or something like t
 
 This plugin will do it for you if you are using formtastic.
 
-Note: the javascript file depends on Prototype 1.6.1, just update your prototype.js. Rails 2 uses Prototype version 1.6.0.3
+Note: the javascript file depends on Prototype 1.6.1 and Rails uses Prototype version 1.6.0.3, just update your prototype.js
 
-h2. Usage
+h2. Installation
+
+h3. Plugin
 
 <pre>$ ruby script/plugin install git://github.com/sobrinho/formtastic_masked_input.git
 $ ruby script/generate formtastic_masked_input</pre>
+
+h3. Gem
+
+<pre>$ gem install formtastic_masked_input<pre>
+
+Add gem dependency to your environment.rb:
+
+<pre>config.gem 'formtastic_masked_input'</pre>
+
+And generate the masked_input.js:
+
+<pre>$ ruby script/generate formtastic_masked_input</pre>
+
+h2. Usage
 
 Include prototype.js and masked_input.js into layout:
 
