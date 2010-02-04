@@ -26,7 +26,7 @@ And update your form field:
   <%= f.buttons %>
 <% end %></pre>
 
-h3. Masks
+h2. Masks
 
 The available masks are made for Brazil:
 
@@ -48,9 +48,13 @@ If you want to add a custom mask, you can edit masked_input.js around line 301 (
 //]]>
 </script></pre>
 
+h2. Credits
+
+Special thanks to Justin French for formtastic and Bjarte K. Vebjørnsen for MaskedInput port for Prototype.
+
 h2. TODO
 
-* Make tests for Ruby
-* Make tests for JS
+* Make tests for plugin
+* Make tests for MaskedInput
 
 Copyright (c) 2010 Gabriel Sobrinho, released under the MIT license
